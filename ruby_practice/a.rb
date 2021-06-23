@@ -74,3 +74,50 @@ matches #=> [2,4]
 [1,2,3].find{|i| i.odd?} #=> 1
 
 [1,2].reject{|i| i.even?} #=> [1]
+
+def my_find(collection)
+    i = 0
+    while i < collection.length
+      yield(collection[i])
+      i = i + 1
+    end
+  end
+
+  nums.collect { |n| n * n }
+
+  odds_and_evens.select do |n|
+    n.even?
+  end
+
+  cats_and_dogs.delete_if do |pet|
+    pet == "dog"
+  end
+
+  famous_cats.include?("Maru")
+
+  quiet_and_loud.any? do |word|
+    word == word.upcase
+  end
+
+def prime?(num)
+ val=""
+ count=0
+ if (num<2)
+  return false
+ else
+  i=2
+
+  while(i<num)
+   if (num%i==0)
+    count+=1
+   end
+    i+=1
+  end
+ end
+
+ if count>=1
+  return false
+ else
+  return true
+ end
+end
