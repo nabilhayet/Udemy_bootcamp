@@ -121,3 +121,48 @@ def prime?(num)
   return true
  end
 end
+
+array = [7, 3, 1, 2, 6, 5]
+ 
+array.sort do |a, b|
+  a <=> b
+end
+#  => [1, 2, 3, 5, 6, 7]
+
+winner = ""
+passengers.each do |suite, name|
+  if suite == :suite_a && name.start_with?("A")
+    winner = name
+  end
+end
+ 
+winner
+
+flatiron_school = {instructor: "Isaac Newton"}
+flatiron_school = {:instructor => "Isaac Newton"}
+
+flatiron_school = {
+  instructors: ["Avi", "Jeff", "Rose"], 
+  dev_team: ["Jonas", "Logan", "Amanda", "Seiji", "Kate", "Spencer"],
+  students: ["Sarah", "you", "John", "David"]
+}
+
+instructors = flatiron_school[:instructors]
+ # => ["Avi", "Jeff", "Rose"]
+
+my_hash = {first: "i'm first!", second: "i'm second!"}
+my_hash[:third] = "i'm third!"
+
+groceries = {fruit: "Banana", vegetable: "Broccoli", dessert: "Cookie"}
+ 
+groceries.values
+#  => ["Banana", "Broccoli", "Cookie"]
+
+groceries.keys
+#  => [:fruit, :vegetable, :dessert]
+
+groceries.values.flatten
+#=> ["milk", "yogurt", "cheese", "carrots", "broccoli", "cucumbers", "chicken", "steak", "salmon", "rice", "pasta"]
+
+groceries.values.flatten.min
+#=> "broccoli"
