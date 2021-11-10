@@ -44,6 +44,7 @@ const getJoke = async () => {
     try {
         const config = { headers: { Accept: 'application/json' } }
         const res = await axios.get('https://icanhazdadjoke.com/', config)
+        console.log(res)
         return res.data.joke;
     } catch (e) {
         return 'NO JOKES Available'
@@ -51,3 +52,4 @@ const getJoke = async () => {
 
 }
 button.addEventListener('click', addNewJoke)
+
