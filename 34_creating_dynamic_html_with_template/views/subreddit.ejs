@@ -3,13 +3,30 @@
 
 <head>
     <title>
-        <%= subreddit%>
+        <%= name %>
     </title>
+    <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
-    <h1>Browsing the <%= subreddit%> subreddit</h1>
+    <h1>Browsing the <%= name %> subreddit</h1>
+    <h2>
+        <%= description %>
+    </h2>
+    <p>Total subcribers <%= subscribers %>
+    </p>
+    <hr>
 
+    <% for(let post of posts) { %>
+        <article>
+            <h3>
+                <%= post.title %>
+            </h3>
+            <% if(post.img) { %>
+                <img src="<%= post.img%>" alt="">
+                <% } %>
+        </article>
+        <% } %>
 </body>
 
 </html>

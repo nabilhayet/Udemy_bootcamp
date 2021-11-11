@@ -1,0 +1,59 @@
+{
+    "soccer": {
+        "name": "Soccer",
+        "subscribers": 80000,
+        "description": "The soccer team",
+        "posts": [
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            }
+        ]
+    },
+    "chickens": {
+        "name": "Chickens",
+        "subscribers": 60000,
+        "description": "The chicken team",
+        "posts": [
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            }
+        ]
+    },
+    "mightyhervest": {
+        "name": "mh",
+        "subscribers": 40000,
+        "description": "The mh team",
+        "posts": [
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            },
+            {
+                "title": "Ola miamor",
+                "author": "Nabil Hayet"
+            }
+        ]
+    }
+}
