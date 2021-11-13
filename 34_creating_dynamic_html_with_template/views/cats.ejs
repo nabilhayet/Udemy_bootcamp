@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
+<%- include('partials/head') %>
 
-<head>
-    <title>All Cats!</title>
-</head>
+    <body>
+        <%- include('partials/navbar') %>
+            <h1> All the Cats</h1>
+            <ul>
+                <% for(let cat of cats) { %>
+                    <li>
+                        <%= cat%>
+                    </li>
+                    <% } %>
+            </ul>
 
-<body>
+    </body>
 
-    <h1> All the Cats</h1>
-    <ul>
-        <% for(let cat of cats) { %>
-            <li>
-                <%= cat%>
-            </li>
-            <% } %>
-    </ul>
-
-</body>
-
-</html>
+    </html>

@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html>
+<%- include('partials/head') %>
 
-<head>
-    <title>
-        <%= name %>
-    </title>
-    <link rel="stylesheet" href="/app.css">
-</head>
+    <body>
+        <%- include('partials/navbar') %>
+            <div class="container">
+                <h1>Browsing the <%= name %> subreddit</h1>
+                <h2>
+                    <%= description %>
+                </h2>
+                <p>Total subcribers <%= subscribers %>
+                </p>
+                <hr>
 
-<body>
-    <h1>Browsing the <%= name %> subreddit</h1>
-    <h2>
-        <%= description %>
-    </h2>
-    <p>Total subcribers <%= subscribers %>
-    </p>
-    <hr>
+                <% for(let post of posts) { %>
+                    <article>
+                        <h3>
+                            <%= post.title %>
+                        </h3>
+                        <% if(post.img) { %>
+                            <img src="<%= post.img%>" alt="">
+                            <% } %>
+                    </article>
+                    <% } %>
+            </div>
+    </body>
 
-    <% for(let post of posts) { %>
-        <article>
-            <h3>
-                <%= post.title %>
-            </h3>
-            <% if(post.img) { %>
-                <img src="<%= post.img%>" alt="">
-                <% } %>
-        </article>
-        <% } %>
-</body>
-
-</html>
+    </html>
