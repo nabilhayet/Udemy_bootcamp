@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show Comment</title>
+</head>
+
+<body>
+    <h1>Comment Id: <%= comment.id%>
+    </h1>
+    <h2>
+        <%= comment.comment%>- <%= comment.username%>
+    </h2>
+
+    <a href="/comments">View Comments</a>
+    <a href="/comments/<%= comment.id%>/edit">Edit Comments</a>
+    <form method="POST" action="/comments/<%= comment.id %>?_mathod=DELETE">
+        <button>Delete</button>
+    </form>
+</body>
+
+</html>
