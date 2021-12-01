@@ -32,6 +32,12 @@ app.get('/farms', async (req, res) => {
     res.render('farms/index', { farms })
 })
 
+app.delete('/farms/:id', async (req, res) => {
+    const { id } = req.params
+    const farm = await Farm.findByIdAndDelete(id)
+    res.redirect('/farms')
+})
+
 app.get('/farms/new', (req, res) => {
     res.render('farms/new')
 })
